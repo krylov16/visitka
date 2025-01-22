@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Вопрос{% endblock title %}
+
+{% block header %}
+    {% if correct == True %}
+        Спасибо за ваш вопрос, {{name}}!
+    {% endif %}
+{% endblock header %}
+
+{% block content %}
+
+{% if correct == True %}
+    Ваш вопрос "{{question}}" отправлен.<br>
+    Ответ придет на почту: {{email}}
+{% else %}
+    {{value}}
+{% endif %}
+
+{% endblock content %}
+

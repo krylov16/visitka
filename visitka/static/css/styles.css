@@ -1,0 +1,50 @@
+header {
+    color: #3fa71a;
+    font-size: 25px;
+}
+
+.menu {
+    background-color: #dcdfdd;
+    padding: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.menu_item:hover {
+    color: red;
+}
+
+.header {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.footer_parent {
+    display: flex;
+}
+
+.footer {
+    background-color: #bcc2be;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.expandable { flex: 1; }
+
+.sert_images {
+    width: 380px;
+}
+
+.tlg_images {
+    width: 200px;
+}
+
+.question {
+    background-color: #badee9;
+    padding: 1px 0px 5px 10px;
+    margin: 5px 0px;
+}

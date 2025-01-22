@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Контакты{% endblock title %}
+{% block header %}Контакты{% endblock header %}
+
+{% block content %}
+
+Телефон: +79872817455 <br>
+E-mail: krylov-k@yandex.ru <br>
+<a href="https://t.me/kst_16">Телеграм</a><br>
+<div class="question">
+    <h2>Задать вопрос</h2>
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+{% endblock content %}
+

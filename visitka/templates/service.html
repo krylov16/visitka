@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Услуги{% endblock title %}
+{% block header %}Услуги{% endblock header %}
+
+{% block content %}
+<table>
+    {% for cur_serv in serv_list %}
+    <tr>
+        <td>{{cur_serv.name}}</td>
+        <td>{{cur_serv.price}} р.</td>
+        <td>{{cur_serv.description}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

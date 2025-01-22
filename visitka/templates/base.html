@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    {% include "banner.html" %}
+    <div class="menu">
+        <a class="menu_item" href="/">Главная</a>
+        | <a class="menu_item" href="/service">Услуги</a>
+        | <a class="menu_item" href="/sertificates">Сертификаты</a>
+        | <a class="menu_item" href="/contact">Контакты</a>
+    </div>
+    <p>
+    <div class="header">{% block header %} {% endblock header %}</div>
+    <div class="info">{% block content %} {% endblock content %}</div>
+    <p>
+    <div class="footer_parent">
+        <div class="footer"><img class = "tlg_images" src="{% static 'images/tlgqr.jpg' %}"></div>
+        <div class="footer">ИП Крылов Константин Олегович<br>ИНН 615015579495<br>ОГРН 311169021400231</div>
+        <div class="footer expandable">Тел: +79872817455<br>e-mail: krylov-k@yandex.ru<br>Телеграм: @kst_16</div>
+    </div>
+</body>
+</html>
