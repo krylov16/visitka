@@ -20,7 +20,7 @@ def contact(request):
             Quest = Questoins(name=name, email=email, question=question)
             Quest.save()
         else:
-            data = {"correct": False, "value": "Данные некорректны"}
+            data = {"correct": False, "value": "Данные некорректны!"}
 
         return TemplateResponse(request, "post_question.html", data)
     else:
